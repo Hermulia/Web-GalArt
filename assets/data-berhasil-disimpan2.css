@@ -1,0 +1,182 @@
+:root {
+    --coklat-tua-color: #1B120B;
+    --beige-color: #D5CEA2;
+    --coksu-color: #AF8F6F;
+    --coklat-color: #3C2A21;
+    --semi-white-color: #E5E5CB;
+    --mirip-coklat-color: #543310;
+    --font-family: "Noto Sans", sans-serif;
+    --font-family: "Noto Serif", serif;
+    --font-family: "Roboto Mono", monospace;
+  }
+  
+  body {
+    background-image: url(BG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Noto Sans", sans-serif;
+    color: #E5E5CB;
+    height: 100%;
+  }
+  
+  /* .username {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3C2A21;
+    border-radius: 35px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(175, 143, 111, 0.5);
+  }
+  
+  .profile-container a {
+    text-decoration: none;
+    color: #1B120B;
+    background-color: #D5CEA2;
+    padding: 4px 20px;
+    border-radius: 30px;
+  
+  }
+  
+  .profile-container a:hover {
+    background-color: #AF8F6F;
+    color: #D5CEA2;
+  }
+  
+  .profilepicture {
+    width: 50px;
+    height: 50px;
+    background-color: #543310;
+    border-radius: 50%;
+  }
+  
+  .PopUp {
+    position: absolute;
+    right: 110px;
+    width: 180px;
+    top: 120px;
+    visibility: hidden;
+  }
+  
+  .openPopUp {
+    visibility: visible;
+  }
+  
+  .JuNa {
+    text-align: left;
+    margin-right: auto;
+  }
+   */
+  .tengah img{
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    /* display: flex;
+    overflow: hidden;
+   */
+  
+  }
+
+  .tengah h4 {
+    font-family: "Roboto Mono", monospace; 
+  }
+  
+  .disimpan-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    background-color: rgba(60, 42, 33, 0.5);
+    border-radius: 270px;
+    padding: 25px 25px;
+  }
+  
+  .koleksi {
+    text-align: center;
+  }
+  
+  .btn-koleksi {
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .btn {
+    background-color: #D5CEA2;
+    border: none;
+    color: #1B120B;
+    padding: 15 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  
+  }
+  
+  .btn:hover {
+    background-color: #AF8F6F;
+    color: #D5CEA2;
+  }
+  
+  .profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    right: 50px;
+  }
+  
+  .tentang {
+    text-align: center;
+    width: 200px;
+    transform: translateY(5px);
+  
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .kaki {
+    padding: 20px 100px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #3C2A21;
+  }
+  
+  .copyright {
+    text-align: center;
+    background-color: #1B120B;
+  }
+
+  .footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #3C2A21;
+  }
+  
+  @media ( max-width : 500px) {
+    .PopUp { 
+      transform: scale(0.7);
+    }
+  }
+  

@@ -1,0 +1,233 @@
+:root {
+	--coklat-tua-color : #1B120B;
+	--beige-color : #D5CEA2;
+	--coksu-color : #AF8F6F;
+	--coklat-color : #3C2A21;
+	--semi-white-color : #E5E5CB;
+	--mirip-coklat-color : #543310;
+	--font-family: "Noto Sans", sans-serif;
+ 	--font-family: "Noto Serif", serif;
+  	--font-family: "Roboto Mono", monospace;
+
+}
+*{
+	margin: 0; padding: 0;
+	font-family: "Noto Sans", sans-serif;
+	color: #E5E5CB;
+}	
+body {
+	background-color: #1B120B;
+}
+.container{
+	width: 100;
+	height: 100;
+	background-color: #1B120B;
+	background-position: center;
+	background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+} 
+.navbar {
+	height: 12%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #E5E5CB;
+}
+.username {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+} 
+.img.profile-icon {
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+  }
+  .profile-icon {
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+  }
+.profile-icon{
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+    margin-left: 35px;
+}
+.profile-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #3C2A21;
+	border-radius: 35px;
+	padding: 10px;
+	gap: 10px;
+	box-shadow: 0 0 10px rgba(175, 143, 111, 0.5);
+}
+.profile-container a {
+	text-decoration: none;
+	color: #1B120B;
+	background-color: #D5CEA2;
+	padding: 4px 20px;
+	border-radius: 30px;
+}
+.profile-container a:hover {
+	background-color: #AF8F6F;
+	color: #D5CEA2;
+}
+.profilepicture {
+	width: 50px;
+	height: 50px;
+	background-color: #543310;
+	border-radius: 50%;
+}
+.PopUp {
+	position: absolute;
+	right: 110px;
+	width: 180px;
+	top: 120px;
+	display: none;
+}
+.openPopUp {
+	display: block	;
+}nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #E5E5CB;
+    font-size: 18px;
+}
+.grid-container {
+	margin: 0 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	column-gap: 100px;
+	row-gap: 200px;
+
+}
+.grid-item {
+    background-color: #DCDCDC; 
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+	overflow: hidden;
+}
+.grid-item a{
+	text-decoration: none;
+}
+.category-button {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #AF8F6F;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+.category-button.klasik {
+	bottom: 250px; 
+}
+a .category-button.klasik{
+	text-decoration: none;
+}
+.category-button:hover {
+    background-color: #3e271b;
+}
+.horizontal {
+	height: 100%;
+	width: max-content;
+
+}
+.vertikal {
+	height: max-content;
+	width: 100%;
+}
+h2 {
+	text-align: center;
+	color: #DCDCDC;
+}
+h4{
+	text-align: center;
+	color: #E5E5CB;
+}
+.koleksi {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	color: #E5E5CB;
+}
+.koleksi a{
+	text-decoration: none;
+}
+.submit-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a3a29;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+a .submit-button{
+	text-decoration: none;
+}
+
+.submit-button:hover {
+    background-color: #3e271b;
+}
+.tentang {
+	text-align: center;
+	width: 200px;
+	transform: translateY(5px);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+} 
+.tentang h4{
+	font-size: 20px;
+	color: #E5E5CB;
+}
+.tentang p{
+	font-size: 20px;
+	color: #E5E5CB;
+}
+.social {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.social h4{
+	color: #DCDCDC;
+}
+.kaki {
+	padding: 20px 100px;
+	margin-top: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #3C2A21;
+}
+.copyright {
+	text-align: center;
+	padding: 20px 0px;
+	color: #E5E5CB;
+}

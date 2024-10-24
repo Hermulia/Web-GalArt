@@ -1,0 +1,180 @@
+:root {
+    --coklat-tua-color: #1B120B;
+    --beige-color: #D5CEA2;
+    --coksu-color: #AF8F6F;
+    --coklat-color: #3C2A21;
+    --semi-white-color: #E5E5CB;
+    --mirip-coklat-color: #543310;
+    --font-family: "Noto Sans", sans-serif;
+    --font-family: "Noto Serif", serif;
+    --font-family: "Roboto Mono", monospace;
+  }
+  
+  body {
+    background-image: url("lake.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Noto Sans", sans-serif;
+    color: #E5E5CB;
+  }
+.profil-username {
+  width: 100%;
+}
+  .profile-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0d0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.user-name, .name-input {
+    font-size: 18px;
+    color: #fff;
+    flex-grow: 1;
+}
+
+.name-input {
+    font-size: 18px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+}
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(175, 143, 111, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    color: #3C2A21;
+    background-color: #E5E5CB;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #AF8F6F;
+    box-shadow: 0 0 5px rgba(233, 102, 104, 0.532);
+} 
+  .deskripsi-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .isian {
+    text-align: justify;
+  }
+  
+  .btn-simpan {
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .btn {
+    background-color: #D5CEA2;
+    border: none;
+    color: #1B120B;
+    padding: 15 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #543310;
+    color: #D5CEA2;
+  }
+  
+  .tentang {
+    text-align: center;
+    width: 200px;
+    transform: translateY(5px);
+  
+  }
+
+  .modal-fade {
+    background-color: #3C2A21;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .kaki {
+    padding: 20px 100px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #3C2A21;
+  }
+  
+  .copyright {
+    text-align: center;
+    background-color: #1B120B;
+  }
+  
+  .tombol {
+    text-align: center;
+    width: 100%;
+  }
+  @media ( max-width : 500px) {
+    .PopUp { 
+      transform: scale(0.7);
+    }
+  }
+
+  .file-input {
+    visibility: hidden; 
+    display: none;
+    cursor: pointer;
+    /* position: absolute; */
+    z-index: 99;
+  }
+  

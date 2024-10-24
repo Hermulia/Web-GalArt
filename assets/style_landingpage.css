@@ -1,0 +1,178 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+}
+
+body {
+    /* background-image: url("lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; */
+}
+
+.top-container {
+    background-image: url("lake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: #E5E5CB;
+}
+
+.container h1 {
+    font-weight: 300;
+}
+
+.container h2 {
+    font-size: 85px;
+}
+
+.nav {
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-logo p {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tombol {
+    text-align: right;
+}
+.nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn.white-btn {
+    background: rgba(255, 255, 255, 0.2); /* Ubah alpha menjadi 0.2 untuk membuatnya transparan */
+}
+
+.btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5); /* Warna putih dengan alpha 0.5 saat tombol disorot */
+}
+
+
+.koleksi {
+    background-color: #543310;
+    padding: 64px;
+}
+
+.judul-koleksi {
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+.gal-koleksi {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.galeri img {
+    width: 350px;
+    height: 400px ; /* Agar gambar proporsional */
+    background-color: #ddd;
+}
+
+.tentang {
+    text-align: center;
+    width: 200px;
+    transform: translateY(5px);
+    color: #E5E5CB;
+  
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #E5E5CB;
+  }
+  
+  .kaki {
+    padding: 20px 100px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #3C2A21;
+  }
+  
+  .copyright {
+    text-align: center;
+    background-color: #1b120b;
+    color: #E5E5CB;
+  }
+
+  .footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer.kaki {
+    color: #E5E5CB;
+  }
+.art-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: #AF8F6F;
+}
+
+#image1 {
+    height: 655px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    flex-direction: column;
+}
+
+#image1 img {
+    width: max-content;
+    height: 100%;
+}

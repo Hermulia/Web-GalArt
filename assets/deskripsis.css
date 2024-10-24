@@ -1,0 +1,273 @@
+:root {
+  --coklat-tua-color: #1B120B;
+  --beige-color: #D5CEA2;
+  --coksu-color: #AF8F6F;
+  --coklat-color: #3C2A21;
+  --semi-white-color: #E5E5CB;
+  --mirip-coklat-color: #543310;
+  --font-family: "Noto Sans", sans-serif;
+  --font-family: "Noto Serif", serif;
+  --font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #1B120B;
+  font-family: "Noto Sans", sans-serif;
+  color: #E5E5CB;
+}
+
+.text-yellow {
+	color: yellow;
+}
+
+.container {
+  width: 100;
+  height: 100;
+  background-color: #1B120B;
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.img.profile-icon {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3C2A21;
+  border-radius: 35px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(175, 143, 111, 0.5);
+}
+
+.profile-container a {
+  text-decoration: none;
+  color: #1B120B;
+  background-color: #D5CEA2;
+  padding: 4px 20px;
+  border-radius: 30px;
+}
+
+.profile-container a:hover {
+  background-color: #AF8F6F;
+  color: #D5CEA2;
+}
+
+.profilepicture {
+  width: 50px;
+  height: 50px;
+  background-color: #543310;
+  border-radius: 50%;
+}
+
+.PopUp {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  top: 140px;
+  display: none;
+}
+
+.openPopUp {
+  display: block;
+}
+
+.popup-profile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #AF8F6F;
+  border-radius: .5rem;
+  width: 30%;
+  z-index: 100;
+  transition: .3s;
+}
+.popup-profile.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-profile .img-container {
+  /* width: 100px;
+  height: 100px; */
+  width: 60%;
+  margin: 0 auto;
+}
+
+.popup-profile .img-container img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+  border-radius: .5rem;
+}
+
+.popup-profile-close {
+  transform: scale(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+.popup-profile-close.show {
+  transform: scale(1);
+}
+
+.deskripsi-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.rating-container {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.isian {
+  text-align: justify;
+}
+
+.btn-koleksi {
+  text-align: center;
+  display: inline-block;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #1B120B;
+}
+
+.btn {
+  background-color: #D5CEA2;
+  border: none;
+  color: #1B120B;
+  padding: 15 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+
+}
+
+.btn:hover {
+  background-color: #AF8F6F;
+  color: #D5CEA2;
+}
+
+.tentang {
+  text-align: center;
+  width: 200px;
+  transform: translateY(5px);
+
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kaki {
+  padding: 20px 100px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #3C2A21;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.container-rating {
+  border: 1px solid #D5CEA2;
+}
+
+/* .container-rating .star {
+  cursor: pointer;
+} */
+
+.username-text {
+  cursor: pointer;
+}
+
+@media (max-width : 500px) {
+  .PopUp {
+    transform: scale(0.7);
+  }
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:40px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #f1c21a;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #f1c21a;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #f1c21a;
+}    
